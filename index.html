@@ -196,17 +196,13 @@ footer span{font-size:0.68rem;letter-spacing:0.1em;color:var(--muted)}
   .mobile-wrap{gap:0.8rem}
   .mobile{width:140px}
 
-  /* ALL inline grids → 1 col except 2-col packaging */
-  div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
-  div[style*="grid-template-columns:1fr 2fr"]{grid-template-columns:1fr !important}
-  div[style*="grid-template-columns:1fr 1fr 1fr"]{grid-template-columns:1fr !important}
-
-  /* Keep 2-col only for packaging squares inside case-right */
-  .case-right div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr 1fr !important}
-
-  /* Fix max-widths */
+  /* Fix max-widths and images */
   div[style*="max-width"]{max-width:100% !important;width:100% !important}
   img{max-width:100% !important;height:auto}
+
+  /* Fay Maison + Castafiore photo grids only */
+  .photo-grid{grid-template-columns:1fr !important}
+  .cast-outer{flex-direction:column !important}
 }
 
 .skills-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:2.5rem}
