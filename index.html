@@ -202,7 +202,7 @@ footer span{font-size:0.68rem;letter-spacing:0.1em;color:var(--muted)}
 
   /* Fay Maison + Castafiore photo grids only */
   .photo-grid{grid-template-columns:1fr !important}
-  .cast-outer{flex-direction:column !important}
+  .cast-outer{display:flex !important;flex-direction:column !important}
 }
 
 .skills-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:2.5rem}
@@ -395,7 +395,7 @@ footer span{font-size:0.68rem;letter-spacing:0.1em;color:var(--muted)}
     </div>
 
                         <!-- CASTAFIORE VISUALS - pleine largeur -->
-    <div class="cast-outer" style="padding-bottom:5rem;display:flex;flex-direction:column;gap:2rem">
+    <div class="cast-outer" style="padding-bottom:5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start">
 
       <!-- Gauche : 2 téléphones site -->
       <div>
